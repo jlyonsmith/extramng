@@ -1,14 +1,13 @@
-extramng
-========
+# extract_mng
 
-this is a little program extract PNG image files from a MNG file, using libmng 
+This is a program to extract PNG image files from a MNG file, using `libmng`.
 
-How to compile it: (on Ubuntu)
+Compile it on macOS with `just build`.  On macOS you first need to `brew install libmng`.
 
-1) sudo apt-get install libmng-dev
-2) make 
+The program takes 2 parameters:
 
-The program has 2 prameters, one is the name of the mng file, the other is the prefix of the extracted png files.
+```sh
+extract_mng <MNG_FILE> <PNG_PREFIX>
+```
 
-note: this program not create directory automatically.
-
+And you have to manually create a `./png` directory first.
